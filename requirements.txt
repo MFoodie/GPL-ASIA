@@ -1,0 +1,5 @@
+pillow
+tk
+pystray
+pyinstaller
+cairosvg
