@@ -162,4 +162,4 @@ pip install -r requirements.txt
 
 ---
 
-如有问题请联系作者（邮箱1436301457@qq.coms）。
+如有问题请联系作者（邮箱1436301457@qq.com）。
