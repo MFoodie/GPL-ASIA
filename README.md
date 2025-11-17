@@ -129,7 +129,7 @@
 - 运行前请根据实际路径修改代码中的数据集路径参数
 - outputs/目录下为运行结果图片、日志等
 - 若遇依赖或环境问题，请优先检查requirements.txt和PyTorch安装
-
+- 数据集默认下载在你的`D:/SRTP/SRTP/data`文件夹路径下，如需修改路径，可修改对应代码文件的此行代码（数据集名称可能为 Cora、CiteSeer、PubMed或ENZYMES）的数据集路径 `dataset = Planetoid(root='D:/SRTP/SRTP/data', name='Cora', force_reload=False)`，改为你的本地指定路径。
 ---
 
 ## 6. 参考
