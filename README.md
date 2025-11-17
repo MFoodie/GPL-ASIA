@@ -4,7 +4,7 @@
 
 ## 1. 项目概述
 
-本项目展示了面向图提示学习的隐蔽式对抗注入攻击的多种算法及其实验结果，涵盖了经典图神经网络模型（GAT、GCN、GAE）在图提示学习下的对抗攻击与防御。创新点包括：
+本项目展示了 **面向图提示学习的隐蔽式对抗注入攻击**（Graph Prompt Learning - Adversarial Stealthy Injection Attack, **GPL-ASIA**） 的多种算法及其实验结果，涵盖了经典图神经网络模型（GAT、GCN、GAE）在图提示学习下的对抗攻击与防御。创新点包括：
 - 以运行时间和内存占用衡量攻击效果
 - 攻击方法扩展至加权图
 - 动态调整的自适应机制
@@ -23,12 +23,13 @@
 | cross_category     | 跨类别场景下的测试代码 |
 | cross_distribution | 跨分布场景下的测试代码 |
 | cross_database     | 跨数据集场景下的测试代码 |
-| data/              | 存放各类原始数据集（Cora、Citeseer、PubMed等） |
+| data/              | 存放各类原始数据集（Cora、Citeseer、PubMed、ENZYMES等） |
 | outputs/           | 运行结果输出（如图片、日志等） |
 | tools/             | 辅助工具脚本（如打包、可视化等） |
 | gui_launcher.py    | 图形界面启动脚本 |
 | requirements.txt   | Python依赖包列表 |
 | build_icon.ico/png/svg | 项目图标文件（用于可执行文件打包） |
+| dist/GPL-ASIA | 可执行`GPL-ASIA.exe`文件存放位置 |
 
 ---
 
@@ -120,7 +121,7 @@
 4. **可执行文件打包（可选）**
    - 使用PyInstaller等工具，推荐在虚拟环境下打包，需指定icon文件：
      ```bash
-     pyinstaller --windowed --icon build_icon.ico gui_launcher.py
+     pyinstaller --icon build_icon.ico gui_launcher.py
      ```
 
 ---
@@ -143,7 +144,7 @@
 本项目主要依赖以下Python库（详见 requirements.txt）：
 
 - torch（PyTorch）
-- torch_geometric
+- torch geometric
 - numpy
 - pandas
 - matplotlib
@@ -161,4 +162,4 @@ pip install -r requirements.txt
 
 ---
 
-如有问题请联系作者。
+如有问题请联系作者（邮箱1436301457@qq.coms）。
